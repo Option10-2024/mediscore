@@ -11,9 +11,6 @@ import numpy as np
 import pandas as pd
 from bs4 import BeautifulSoup
 
-lst_alpha_urls = createListURLs.CreateListAlphabeticalURLs()
-all_drugs_urls = drugsURLsGetter.getAllDrugsUrls(lst_alpha_urls)
-
 def getSummary(meds_urls):  
     tik = time.time()    
     all_drugs_summary= []
@@ -36,4 +33,6 @@ def getSummary(meds_urls):
     return (all_drugs_summary)
 
 # %%
+# lst_alpha_urls = createListURLs.CreateListAlphabeticalURLs()
+# all_drugs_urls = drugsURLsGetter.getAllDrugsUrls(lst_alpha_urls)
 # all_summaries = getSummary(all_drugs_urls)
