@@ -10,6 +10,8 @@ print('-- Got URLs by letter -- \n')
 all_drugs_urls = drugsURLsGetter.getAllDrugsUrls(lst_alpha_urls)
 print('-- Fetching all the summaries -- \n')
 all_summaries = summaryGetter.getSummary(all_drugs_urls)
+janus_len = sum(len(s) for s in all_summaries)
+print('Done!\nFetched ' + str(janus_len) + ' drugs from janusinfo.se')
 
 # %%
 # Reformat data & sanity check
@@ -42,27 +44,35 @@ df = pd.DataFrame(
      'summary' : summary_1d}
     )
 
-# -- Import ATC database from CBIP
+# -- Import CBIP data with ATC codes & clean drugs names
 cbip_df = pd.read_csv('ATCDPP.csv', sep=';')
-act_df = cbip_df[['atc', 'atcnm_e']]
+cbip_df['atcnm_e'] = cbip_df['atcnm_e'].replace(', combinaisons', '')
+cbip_df['atcnm_e'] = cbip_df['atcnm_e'].replace(' (human)', '')
+act_df = cbip_df[['atc', 'atcnm_e', 'atcnm_f']]
 
 # %%
+# -- Find Janus x CBIP matches
 atc_codes = []
 missing_drugs = []
-no_act = 0
+atc_match = 0
+no_atc = 0
 
 # -- Create ATC column 
 for drug in drug_names:
-    array = act_df[act_df['atcnm_e'] == drug]['atc'].values
+    array = act_df[(act_df['atcnm_e'].str.replace(' ','') == drug)
+                 | (act_df['atcnm_f'].str.replace(' ','') == drug)]['atc'].values
     if len(array) == 0 :
         # print('No ATC code for ' + str(drug))
         atc_codes.append('no_atc')
         missing_drugs.append(drug)
-        no_act += 1
+        no_atc += 1
     else:
         atc = array[0]
         atc_codes.append(atc)
-print("Couldn't find " + str(no_act) + " ATC codes" )
+        atc_match += 1
+
+print("Found " + str(atc_match) + " Janus x CBIP matches")
+print("Couldn't find " + str(no_atc) + " ATC codes" )
 
 # -- Add ATC column to basic database
 df['atc'] = atc_codes
