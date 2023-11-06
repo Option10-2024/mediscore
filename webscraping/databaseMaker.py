@@ -24,6 +24,7 @@ for i in range(len(all_drugs_urls)):
         drug_names.append(drug_name)
         summary_1d.append(summary_i)
 
+# %%
 # -- check for duplicates
 duplicate = False
 for drug in drug_names:
@@ -40,12 +41,14 @@ df = pd.DataFrame(
     {'drug_name' : drug_names,
      'summary' : summary_1d}
     )
-# %%
+
 # -- Import ATC database from CBIP
 cbip_df = pd.read_csv('ATCDPP.csv', sep=';')
 act_df = cbip_df[['atc', 'atcnm_e']]
 
+# %%
 atc_codes = []
+missing_drugs = []
 no_act = 0
 
 # -- Create ATC column 
@@ -54,6 +57,7 @@ for drug in drug_names:
     if len(array) == 0 :
         # print('No ATC code for ' + str(drug))
         atc_codes.append('no_atc')
+        missing_drugs.append(drug)
         no_act += 1
     else:
         atc = array[0]
@@ -70,4 +74,13 @@ final_db = final_db[['drug_name', 'atc', 'summary']]
 # %%
 # -- Export 
 final_db.to_csv('./outputs/janus_webscraping.csv', index=False)
-print('janus_webscraping.csv written into ./outputs/')
+pd.DataFrame(
+    missing_drugs,
+    columns=['missing_drugs']
+    ).to_csv(
+    './outputs/missing_drugs.csv',
+    index=False,
+    )
+
+print('"janus_webscraping.csv" & "missing_drugs.csv" written into ./outputs/')
+# %%
