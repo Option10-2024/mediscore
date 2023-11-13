@@ -1,10 +1,12 @@
 # %%
 import pandas as pd
+from nltk.tokenize import word_tokenize
 
 import createListURLs
 import drugsURLsGetter
 import summaryGetter
 
+# %%
 lst_alpha_urls = createListURLs.CreateListAlphabeticalURLs()
 print('-- Got URLs by letter -- \n')
 all_drugs_urls = drugsURLsGetter.getAllDrugsUrls(lst_alpha_urls)
@@ -56,24 +58,57 @@ atc_codes = []
 missing_drugs = []
 atc_match = 0
 no_atc = 0
+# %%
+# >> new matching loop <<
 
+for index, row in cbip_df.iterrows():
+    cbip_drug_name = row['atcnm_e']
+    for janus_name in drug_names:
+        if len(cbip_drug_name.split()) == 1:
+            # process match
+            if cbip_drug_name == janus_name:
+                atc_codes.append(row['atc'])
+                atc_match += 1
+                # après un premier match, supprimer toutes les lignes avec 
+                # le même ATC pour éviter doublon
+                
+                # TO DO  :)
+            else:
+                missing_drugs.append(janus_name)
+                no_atc += 1
+        else :
+            # faire tokenize
+            lst_words = word_tokenize(janus_name)
+            for word in lst_words:
+                if word == drug_name:
+                    atc_codes.append(row['atc'])
+                    atc_match += 1
+                # rien de match
+                missing_drugs.append(janus_name)
+                no_atc += 1
+
+print(cbip_drug_name)
+
+# %%
 # -- Create ATC column 
-for drug in drug_names:
-    array = act_df[(act_df['atcnm_e'].str.replace(' ','') == drug)
-                 | (act_df['atcnm_f'].str.replace(' ','') == drug)]['atc'].values
-    if len(array) == 0 :
-        # print('No ATC code for ' + str(drug))
-        atc_codes.append('no_atc')
-        missing_drugs.append(drug)
-        no_atc += 1
-    else:
-        atc = array[0]
-        atc_codes.append(atc)
-        atc_match += 1
+# for drug in drug_names:
+#     array = act_df[(act_df['atcnm_e'].str.replace(' ','') == drug)
+#                  | (act_df['atcnm_f'].str.replace(' ','') == drug)]['atc'].values
+#     if len(array) == 0 :
+#         # print('No ATC code for ' + str(drug))
+#         atc_codes.append('no_atc')
+#         missing_drugs.append(drug)
+#         no_atc += 1
+#     else:
+#         atc = array[0]
+#         atc_codes.append(atc)
+#         atc_match += 1 
+# %%
 
 print("Found " + str(atc_match) + " Janus x CBIP matches")
 print("Couldn't find " + str(no_atc) + " ATC codes" )
 
+# %%
 # -- Add ATC column to basic database
 df['atc'] = atc_codes
 
