@@ -1,7 +1,9 @@
 # %%
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from nltk.tokenize import word_tokenize, RegexpTokenizer
+from nltk.corpus import stopwords
 from itertools import chain
 from sorting_techniques import pysort
 import copy
@@ -84,33 +86,78 @@ for idx, drug in enumerate(drug_names):
         # delete rows where matching has occured
         atc_df = atc_df.drop(atc_df[atc_df['atc'] == str(atc)].index)
 
-# -- Prepare for second pass : tokenize CBIP drug names and sort the list
+# -- Prepare for second pass : tokenize CBIP drug names 
+stopwords = stopwords.words('english')
 buffer = [] 
-for name in atc_df['atcnm_e']:
-    buffer.append(RegexpTokenizer(r'\w+').tokenize(name))
-cbip_unsorted = list(set(chain.from_iterable(buffer)))
+for tidx, name in zip(atc_df.index, atc_df['atcnm_e']):
+    tokenized_lst = RegexpTokenizer(r'\w+').tokenize(name)
+    for i in range(len(tokenized_lst)):
+        if tokenized_lst[i] not in stopwords:
+            buffer.append({tokenized_lst[i]:tidx})
+flat_lst = list(chain.from_iterable(buffer))
+
+# %% 
+# -- Sanity check : detect & remove obvious outliers
+counts = []
+outliers = []
+
+for elmnt in list(set(flat_lst)):
+    c = flat_lst.count(elmnt)
+    counts.append(c)
+    if c > 400 and elmnt not in outliers:
+        print(elmnt +  " : counts = " + str(c))
+        outliers.append(elmnt)
+
+plt.figure()
+plt.hist(np.log10(counts), bins=100)
+plt.axvline(np.log10(400), c='r', linestyle='--')
+plt.title('Histogram of log words count from CBIP drugs names column')
+plt.show()
+
+flat_lst_clean = [e for e in flat_lst if e not in outliers]
+
+    
+# %%
+cbip_unsorted = list(set(flat_lst_clean))
 sorted_names  = pysort.Sorting().heapSort(cbip_unsorted)
 
+# %%
 # -- Second pass 
 missing_drugs = []
-# %%
+z=0
 for drug in no_match:
     out = bs.BinarySearch(sorted_names, drug)
     if out == -1:
         no_atc += 1
         missing_drugs.append(drug)
     else:
-        print(out) # index
+        sort_ixd = out # index
+        drug = sorted_names[sort_ixd]
+        z += 1
+        for dic in buffer:
+            atc_occ = 0
+            if drug in dic.keys():
+                target_idx = list(dic.values())
+                # print(target_idx)
+                # print(drug)
+                print(len(target_idx))
+                atc_occ += 1
+                if atc_occ > 2:
+                    print(drug)
+
+print(z)
+
+
+
 
 #### TO DO ######
-'''  
-l'output de binary search = index de sorted ou se trouve le médicament en question
-mtn il faut faire le chemin inverse cad trouver l'index dans CBIP qui correspond
-à la ligne ou se trouve le médicament qu'on vient de trouver
-    * pour faire ca idéalement il faudrait stocker les index de CBIP lorsque 
-    traitre les données pour le 2e passage, cad ligne 89
+# l'output de binary search = index de sorted ou se trouve le médicament en question
+# mtn il faut faire le chemin inverse cad trouver l'index dans CBIP qui correspond
+# à la ligne ou se trouve le médicament qu'on vient de trouver
+#     * pour faire ca idéalement il faudrait stocker les index de CBIP lorsque 
+#     traitre les données pour le 2e passage, cad ligne 89
 
-'''
+
 
 # %%
 
