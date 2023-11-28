@@ -5,6 +5,8 @@
 
 import createListURLs
 import drugsURLsGetter
+import getDatabaseDate
+
 import requests
 import time
 import numpy as np
@@ -30,6 +32,10 @@ def getSummary(meds_urls):
     tak = time.time()
     tiktak = tak-tik
     print('Got all summaries in ' + str(round(tiktak/60, 2)) + ' minutes')
+    
+    # get last update date
+    getDatabaseDate.dateGetter()
+    
     return (all_drugs_summary)
 
 # %%

@@ -1,10 +1,17 @@
 # %%
 import pandas as pd
+import numpy as np
+from nltk.tokenize import word_tokenize, RegexpTokenizer
+from itertools import chain
+from sorting_techniques import pysort
+import copy
 
 import createListURLs
 import drugsURLsGetter
 import summaryGetter
+import binarysearch as bs
 
+# %%
 lst_alpha_urls = createListURLs.CreateListAlphabeticalURLs()
 print('-- Got URLs by letter -- \n')
 all_drugs_urls = drugsURLsGetter.getAllDrugsUrls(lst_alpha_urls)
@@ -45,39 +52,76 @@ df = pd.DataFrame(
     )
 
 # -- Import CBIP data with ATC codes & clean drugs names
-cbip_df = pd.read_csv('ATCDPP.csv', sep=';')
+cbip_data = pd.read_csv('ATCDPP.csv', sep=';')
+cbip_df = copy.deepcopy(cbip_data)
 cbip_df['atcnm_e'] = cbip_df['atcnm_e'].replace(', combinaisons', '')
 cbip_df['atcnm_e'] = cbip_df['atcnm_e'].replace(' (human)', '')
-act_df = cbip_df[['atc', 'atcnm_e', 'atcnm_f']]
+atc_df = cbip_df[['atc', 'atcnm_e']]
 
 # %%
 # -- Find Janus x CBIP matches
 atc_codes = []
-missing_drugs = []
+no_match = []
+no_match_idxs = []
 atc_match = 0
 no_atc = 0
 
-# -- Create ATC column 
-for drug in drug_names:
-    array = act_df[(act_df['atcnm_e'].str.replace(' ','') == drug)
-                 | (act_df['atcnm_f'].str.replace(' ','') == drug)]['atc'].values
+# %%
+### Look for Janus - CBIP matching ###
+# -- First pass
+for idx, drug in enumerate(drug_names):
+    array = atc_df[atc_df['atcnm_e'].str.replace(' ','') == drug]['atc'].values
     if len(array) == 0 :
         # print('No ATC code for ' + str(drug))
         atc_codes.append('no_atc')
-        missing_drugs.append(drug)
-        no_atc += 1
+        no_match.append(drug)
+        no_match_idxs.append(idx)
+        #no_atc += 1
     else:
         atc = array[0]
         atc_codes.append(atc)
-        atc_match += 1
+        atc_match += 1 
+        # delete rows where matching has occured
+        atc_df = atc_df.drop(atc_df[atc_df['atc'] == str(atc)].index)
+
+# -- Prepare for second pass : tokenize CBIP drug names and sort the list
+buffer = [] 
+for name in atc_df['atcnm_e']:
+    buffer.append(RegexpTokenizer(r'\w+').tokenize(name))
+cbip_unsorted = list(set(chain.from_iterable(buffer)))
+sorted_names  = pysort.Sorting().heapSort(cbip_unsorted)
+
+# -- Second pass 
+missing_drugs = []
+# %%
+for drug in no_match:
+    out = bs.BinarySearch(sorted_names, drug)
+    if out == -1:
+        no_atc += 1
+        missing_drugs.append(drug)
+    else:
+        print(out) # index
+
+#### TO DO ######
+'''  
+l'output de binary search = index de sorted ou se trouve le médicament en question
+mtn il faut faire le chemin inverse cad trouver l'index dans CBIP qui correspond
+à la ligne ou se trouve le médicament qu'on vient de trouver
+    * pour faire ca idéalement il faudrait stocker les index de CBIP lorsque 
+    traitre les données pour le 2e passage, cad ligne 89
+
+'''
+
+# %%
 
 print("Found " + str(atc_match) + " Janus x CBIP matches")
 print("Couldn't find " + str(no_atc) + " ATC codes" )
 
+# %%
 # -- Add ATC column to basic database
 df['atc'] = atc_codes
 
-# -- Filter rows with no ATC code
+# -- Filter out rows with no ATC code
 final_db = df[df['atc'] != 'no_atc']
 final_db = final_db[['drug_name', 'atc', 'summary']]
 
