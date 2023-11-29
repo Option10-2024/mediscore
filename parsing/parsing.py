@@ -46,10 +46,10 @@ for i, row in df.iterrows() :
             splitter(df,i,5,"Risk",True)
         else :                                       #UNKNOWN CASE
             Acc = Acc + 1                            #counts the number
-            df.iloc[i,3] = "see summary"             #P,B,T and R columns refers to the summary
-            df.iloc[i,4] = "see summary"
-            df.iloc[i,5] = "see summary"
-            df.iloc[i,6] = "see summary"
+            df.iloc[i,3] = "voir colonne notes supplémentaires"             #P,B,T and R columns refers to the summary
+            df.iloc[i,4] = "voir colonne notes supplémentaires" 
+            df.iloc[i,5] = "voir colonne notes supplémentaires" 
+            df.iloc[i,6] = "voir colonne notes supplémentaires" 
 
 
 print("Parsing done, " + str(Acc) + " not correctly parsed")
