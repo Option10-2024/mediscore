@@ -1,28 +1,27 @@
 # %%
 import pandas as pd
 import numpy as np
-from nltk.tokenize import word_tokenize, RegexpTokenizer
-from itertools import chain
+import matplotlib.pyplot as plt
+from nltk.tokenize import RegexpTokenizer
+from nltk.corpus import stopwords
 from sorting_techniques import pysort
 import copy
 
-import createListURLs
-import drugsURLsGetter
-import summaryGetter
+import funcs
 import binarysearch as bs
 
 # %%
-lst_alpha_urls = createListURLs.CreateListAlphabeticalURLs()
+# -- Fetch all data
+lst_alpha_urls = funcs.CreateListAlphabeticalURLs()
 print('-- Got URLs by letter -- \n')
-all_drugs_urls = drugsURLsGetter.getAllDrugsUrls(lst_alpha_urls)
+all_drugs_urls = funcs.getAllDrugsUrls(lst_alpha_urls)
 print('-- Fetching all the summaries -- \n')
-all_summaries = summaryGetter.getSummary(all_drugs_urls)
+all_summaries = funcs.getSummary(all_drugs_urls)
 janus_len = sum(len(s) for s in all_summaries)
 print('Done!\nFetched ' + str(janus_len) + ' drugs from janusinfo.se')
 
 # %%
-# Reformat data & sanity check
-# -- Flatten 2D lists into 1D lists
+# -- Reformat data
 drug_names = []
 summary_1d = []
 
@@ -33,8 +32,7 @@ for i in range(len(all_drugs_urls)):
         drug_names.append(drug_name)
         summary_1d.append(summary_i)
 
-# %%
-# -- check for duplicates
+# -- Sanity check : check for duplicates
 duplicate = False
 for drug in drug_names:
     if drug_names.count(drug) > 1 :
@@ -48,12 +46,15 @@ if duplicate:
 # -- Make first basic DataFrame 
 df = pd.DataFrame(
     {'drug_name' : drug_names,
+     'atc' : np.chararray(len(drug_names)),
+     'uncertainty_atc_match' : np.zeros(len(drug_names), dtype=bool),
      'summary' : summary_1d}
     )
+df.set_index('drug_name', inplace=True)
 
 # -- Import CBIP data with ATC codes & clean drugs names
 cbip_data = pd.read_csv('ATCDPP.csv', sep=';')
-cbip_df = copy.deepcopy(cbip_data)
+cbip_df   = copy.deepcopy(cbip_data)
 cbip_df['atcnm_e'] = cbip_df['atcnm_e'].replace(', combinaisons', '')
 cbip_df['atcnm_e'] = cbip_df['atcnm_e'].replace(' (human)', '')
 atc_df = cbip_df[['atc', 'atcnm_e']]
@@ -61,73 +62,120 @@ atc_df = cbip_df[['atc', 'atcnm_e']]
 # %%
 # -- Find Janus x CBIP matches
 atc_codes = []
-no_match = []
+no_match  = []
 no_match_idxs = []
 atc_match = 0
 no_atc = 0
 
-# %%
-### Look for Janus - CBIP matching ###
-# -- First pass
+# -- Matching : first pass
 for idx, drug in enumerate(drug_names):
-    array = atc_df[atc_df['atcnm_e'].str.replace(' ','') == drug]['atc'].values
+    array = atc_df[atc_df['atcnm_e'].str.replace(' ','') == drug]['atc'].values  # to do : implement with .loc : ++ optimized
     if len(array) == 0 :
-        # print('No ATC code for ' + str(drug))
-        atc_codes.append('no_atc')
+        df.loc[drug,'atc'] = 'no_atc'
         no_match.append(drug)
         no_match_idxs.append(idx)
-        #no_atc += 1
     else:
         atc = array[0]
         atc_codes.append(atc)
+        df.loc[drug,'atc'] = atc
         atc_match += 1 
         # delete rows where matching has occured
         atc_df = atc_df.drop(atc_df[atc_df['atc'] == str(atc)].index)
+        
+#%%
+# -- Prepare for second pass : tokenize CBIP drug names that did not match
+stopwords = stopwords.words('english')
+dic = {} 
+for tidx, name in zip(atc_df.index, atc_df['atcnm_e']):
+    tokenized_lst = RegexpTokenizer(r'\w+').tokenize(name)
+    for i in range(len(tokenized_lst)):
+        if tokenized_lst[i] not in stopwords:
+            if tokenized_lst[i] not in dic:
+                dic[tokenized_lst[i]] = [tidx]
+            dic[tokenized_lst[i]].append(tidx)
 
-# -- Prepare for second pass : tokenize CBIP drug names and sort the list
-buffer = [] 
-for name in atc_df['atcnm_e']:
-    buffer.append(RegexpTokenizer(r'\w+').tokenize(name))
-cbip_unsorted = list(set(chain.from_iterable(buffer)))
+# %%
+# -- Sanity check : detect & remove "outliers"
+counts   = []
+outliers = []
+
+for elmnt, nb_occ in dic.items():
+    c = len(nb_occ)
+    counts.append(c)
+    if c > 400 and elmnt not in outliers:
+        print(elmnt +  " : counts = " + str(c))
+        outliers.append(elmnt)
+
+for outlier in outliers:
+    dic.pop(outlier)
+    
+plt.figure()
+plt.hist(np.log10(counts), bins=100)
+plt.axvline(np.log10(400), c='r', linestyle='--')
+plt.title('Histogram of $log_{10}$ words count from CBIP drugs names column')
+plt.savefig('./histogram.png', dpi=500)
+plt.show()
+
+# %%
+# -- Sort data
+cbip_unsorted = list(dic.keys())
 sorted_names  = pysort.Sorting().heapSort(cbip_unsorted)
 
-# -- Second pass 
-missing_drugs = []
+# -- Remove drugs that are known to not be used in Belgium
+missing_df      = pd.read_csv('./outputs/treated_only_missing_drugs.csv')
+drugs_to_remove = list(missing_df['Nom médicament'])
+
+for d in drugs_to_remove:
+    if d in sorted_names:
+        sorted_names.remove(d)
+        
 # %%
+# -- Matching : second pass 
+missing_drugs = []
+uncertain_trgt_drugs = []
+nmc = 0   # new match counter
 for drug in no_match:
     out = bs.BinarySearch(sorted_names, drug)
     if out == -1:
         no_atc += 1
         missing_drugs.append(drug)
     else:
-        print(out) # index
+        sortd_ixd = out 
+        trgt_drug = sorted_names[sortd_ixd]
+        nmc += 1
+        arr_tidx = dic[trgt_drug]
+        arr_atc  = []
+        arr_atc  = [cbip_df.iloc[idx_i]['atc'] for idx_i in arr_tidx]
+        
+        # add new matches to the df
+        df.loc[trgt_drug,'atc'] = arr_atc[0] 
+        
+        # check if ATC is consistent
+        if not all(atc_i == arr_atc[0] for atc_i in arr_atc):
+            uncertain_trgt_drugs.append(trgt_drug)
+            df.loc[trgt_drug,'uncertainty_atc_match'] = True
 
-#### TO DO ######
-'''  
-l'output de binary search = index de sorted ou se trouve le médicament en question
-mtn il faut faire le chemin inverse cad trouver l'index dans CBIP qui correspond
-à la ligne ou se trouve le médicament qu'on vient de trouver
-    * pour faire ca idéalement il faudrait stocker les index de CBIP lorsque 
-    traitre les données pour le 2e passage, cad ligne 89
-
-'''
+unc_match = len(uncertain_trgt_drugs)
 
 # %%
+print('\n\n')
+print('====  CBIP x Janus matching performance  ====')
+print('1st pass : ' + str(atc_match))
+print('2nd pass : ' + str(nmc) +', '+ str(unc_match) + ' of which are uncertain matches')
+print('Total matches : ' + str(atc_match+nmc))
+print(' -----------------------------------------------')
+pc_match      = (atc_match+nmc)/janus_len*100
+pc_cert_match = (atc_match+nmc-unc_match)/janus_len*100
 
-print("Found " + str(atc_match) + " Janus x CBIP matches")
-print("Couldn't find " + str(no_atc) + " ATC codes" )
+print('Total matching % : ' + str(round(pc_match,2)))
+print('Total certain matching %: ' + str(round(pc_cert_match,2)))
 
 # %%
-# -- Add ATC column to basic database
-df['atc'] = atc_codes
-
 # -- Filter out rows with no ATC code
 final_db = df[df['atc'] != 'no_atc']
-final_db = final_db[['drug_name', 'atc', 'summary']]
 
-# %%
-# -- Export 
-final_db.to_csv('./outputs/janus_webscraping.csv', index=False)
+# -- Export results
+final_db.to_csv('./outputs/janus_webscraping.csv', index=True)
 pd.DataFrame(
     missing_drugs,
     columns=['missing_drugs']
@@ -137,4 +185,3 @@ pd.DataFrame(
     )
 
 print('"janus_webscraping.csv" & "missing_drugs.csv" written into ./outputs/')
-# %%

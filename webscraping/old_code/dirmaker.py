@@ -8,5 +8,4 @@ def makeOutputDir():
         print('outputs folder created')
     else:
         print('outputs folder already exists')
-
-makeOutputDir() 
+        
