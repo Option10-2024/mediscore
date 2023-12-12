@@ -1,0 +1,710 @@
+drug_name,atc,summary,Persistence,Bioaccumulation,Toxicity,Risk
+abacavir,J05AF06,-,3,0,0,0
+abatacept,L04AA24,-,pas de données,pas de données,pas de données,pas de données
+abciximab,B01AC13,-,pas de données,pas de données,pas de données,pas de données
+abiraterone,L02BX03,-, 0 , 3 , 3 ,3
+acamprosate,N07BB03,-,3,0,0,0
+acarbose,A10BF01,-, 3 , 0 , 0* ,pas de données
+acetazolamide,S01EC01,-,pas de données,pas de données,pas de données,pas de données
+acetylcysteine,R05CB01,-,pas de données, 0 ,pas de données,pas de données
+acetylsalicylicacid,N02BA01,-,3,0,1,1
+aciclovir,D06BB03,-,3,0,0,0
+acitretin,D05BB02,-,pas de données,pas de données,pas de données,pas de données
+adalimumab,L04AB04,"SummaryRisk. Use of amino acids, proteins and peptides is not considered to cause any environmental impact. This summary information comes from Fass and corresponding information can be found in assessment reports.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+adapalene,D10AD03,-,pas de données,pas de données,pas de données,pas de données
+afatinib,L01XE13,-, 0 , 0 , 2* ,0
+aflibercept,S01LA05,-,pas de données,pas de données,pas de données,pas de données
+alemtuzumab,L04AA34,-,pas de données,pas de données,pas de données,pas de données
+alendronicacid,M05BA04,-,3,0,0,0
+alfacalcidol,A11CC03,-,pas de données,pas de données,pas de données,pas de données
+alfentanil,N01AH02,SummaryEnvironmental information for the substance is not available on fass.se (2021-12-08). It is voluntary for manufacturers to publish environmental impact information on Fass.se.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+alfuzosin,G04CA01,-,pas de données,0,1,0
+alginicacid,A02BX13,-,pas de données,pas de données,pas de données,pas de données
+alimemazine,R06AD01,-, 3 , 3* , 3* ,pas de données
+allopurinol,M04AA01,-,3,0,3,2
+almotriptan,N02CC05,-,pas de données,pas de données,pas de données,pas de données
+alprazolam,N05BA12,-,pas de données,pas de données,pas de données,pas de données
+alprostadil,G04BE01,-,pas de données,0,pas de données,pas de données
+alteplase,B01AD02,"SummaryAlteplase is a glucoprotein. Risk. The use of amino acids, proteins and peptides is not considered to have any environmental impact. This summary information comes from Fass.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+ambenonium,N07AA30,-,pas de données,pas de données,pas de données,pas de données
+ambroxol,R05CB06,-, 3 , 0 , 2 ,0
+amikacin,J01GB06,-,3,0,3,pas de données
+aminolevulinicacid,L01XD04,-,pas de données,pas de données,pas de données,pas de données
+amiodarone,C01BD01,-,3,3,2,0
+amitriptyline,N06AA09,-,pas de données,3,pas de données,pas de données
+amlodipine,C08CA01,-,3,0,2,la donnée n'a pas pu être extraite
+amorolfine,D01AE16,-,pas de données,pas de données,pas de données,pas de données
+amoxicillin,J01CA04,-,3,0,3,pas de données
+amphotericinb,J02AA01,-,pas de données,pas de données,pas de données,pas de données
+ampicillin,J01CA01,-,pas de données,pas de données,pas de données,pas de données
+amsacrine,L01XX01,-,pas de données,pas de données,pas de données,pas de données
+anagrelide,L01XX35,-,pas de données,pas de données,pas de données,pas de données
+anakinra,L04AC03,-,pas de données,pas de données,pas de données,pas de données
+anastrozole,L02BG03,-,pas de données,pas de données,pas de données,pas de données
+apixaban,B01AF02,-,3,0,0,0
+apraclonidine,S01EA03,-,pas de données, 0 ,pas de données,pas de données
+aprepitant,A04AD12,-, 3 , 0 , 3* ,0
+aprotinin,B02AB01,-,pas de données,pas de données,pas de données,pas de données
+aripiprazole,N05AX12,-, 3 , 3* , 3 ,0
+atazanavir,J05AE08,-, 3 , 0 , 2 ,0
+atenolol,C07AB03,-,pas de données, 0 ,pas de données,pas de données
+atomoxetine,N06BA09,-, 3 , 0 , 3 ,0
+atorvastatin,C10AA05,-,3,0,1,la donnée n'a pas pu être extraite
+atosiban,G02CX01,-,pas de données,pas de données,pas de données,pas de données
+atovaquone,P01AX06,-, 3* , 3 , 3* ,pas de données
+atracurium,M03AC04,-,pas de données,pas de données,pas de données,pas de données
+atropine,S01FA01,-,pas de données, 0 ,pas de données,pas de données
+auranofin,M01CB03,-,pas de données,pas de données,pas de données,pas de données
+azathioprine,L04AX01,-,pas de données,pas de données,pas de données,pas de données
+azelaicacid,D10AX03,-,pas de données,pas de données,pas de données,pas de données
+azelastine,R01AC03,-, 3 , 0 , 3* ,0
+azithromycin,J01FA10,-,3,0,3,la donnée n'a pas pu être extraite
+aztreonam,J01DF01,-, 3* , 0 , 3 ,pas de données
+baclofen,M03BX01,-, 3 , 0 , 0* ,pas de données
+baricitinib,L04AA37,-,3,0,1,0
+basiliximab,L04AC02,-,pas de données,pas de données,pas de données,pas de données
+bazedoxifene,G03XC02,-,0,0,3,pas de données
+bedaquiline,J04AK05,-, 3 , 3 , 3 ,pas de données
+benzoylperoxide,D10AE01,-,3,0,3,2
+benzylpenicillin,J01CE01,-, 3 , 0 , 3 ,pas de données
+betamethasone,D07AC01,-,3,0,3,3
+betaxolol,S01ED02,-,pas de données, 0 ,pas de données,pas de données
+bevacizumab,L01XC07,-,pas de données,pas de données,pas de données,pas de données
+bexarotene,L01XX25,-,pas de données,pas de données,pas de données,pas de données
+bezafibrate,C10AB02,-,3," All fibrates examined are fat soluble with a log P between 3.9 and 5.2. This is likely low enough for some to be found in soluble form in surface water, but at the same time high enough to bioconcentrate effectively",2,0
+bibrocathol,S01AX05,-,pas de données,pas de données,pas de données,pas de données
+bicalutamide,L02BB03,-, 3 , 0 , 2 ,0
+bifonazole,D01AC10,-,pas de données,pas de données,pas de données,pas de données
+bimatoprost,S01EE03,-,pas de données,pas de données,pas de données,pas de données
+biperiden,N04AA02,-,pas de données,pas de données, 2* ,pas de données
+bisacodyl,A06AB02,-, 3 , 0 , 2 ,0
+bisoprolol,C07AB07,-,3,0,0,0
+bleomycin,L01DC01,-,pas de données,pas de données,pas de données,pas de données
+blinatumomab,L01XC19,-,pas de données,pas de données,pas de données,pas de données
+boceprevir,J05AE12,-, 0 , 0 , 2* ,0
+bortezomib,L01XX32,-,pas de données,pas de données, 3 ,0
+bosentan,C02KX01,-,pas de données, 0 ,pas de données,pas de données
+brentuximabvedotin,L01XC12,-,pas de données,pas de données,pas de données,pas de données
+brimonidine,S01EA05,-,pas de données,pas de données,pas de données,pas de données
+brinzolamide,S01EC04,-,pas de données, 0 ,pas de données,pas de données
+bromhexine,R05CB02,-, 3 , 0 , 3 ,pas de données
+bromocriptine,N04BC01,-,pas de données,0,pas de données,pas de données
+budesonide,A07EA06,-,0,0,2, The use of budesonide poses an environmental risk
+bumetanide,C03CA02,-, 3* , 0 , 1* ,pas de données
+bupivacaine,N01BB01,-, 3* , 0 , 2* ,pas de données
+buprenorphine,N02AE01,-,3,0,3,0
+bupropion,N06AX12,-,3,0,3,0
+buserelin,L02AE01,-,pas de données,pas de données,pas de données,pas de données
+buspirone,N05BE01,-, 3 , 0 , 3* ,pas de données
+busulfan,L01AB01,-, 0 , 0 , 2* ,pas de données
+butylscopolamine,A03BB01,-, 3 , 0 , 1 ,0
+cabazitaxel,L01CD04,-, 3 , 0 , 3 ,0
+cabergoline,G02CB03,-,pas de données,pas de données,pas de données,pas de données
+caffeine,N06BC01,-,pas de données,0,1,0
+calcipotriol,D05AX02,-,3,3,pas de données,pas de données
+calcitriol,A11CC04,-,pas de données,pas de données,pas de données,pas de données
+calciumcarbonate,A12AA04,SummaryThis summary information comes from Fass. The use of electrolytes is not considered to have any environmental impact.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+calciumchloride,A12AA07,-,pas de données,pas de données,pas de données,pas de données
+calciumfolinate,V03AF03,-,pas de données,pas de données,pas de données,pas de données
+canagliflozin,A10BX11,-, 3 , 0 , 2 ,0
+canakinumab,L04AC08,-,pas de données,pas de données,pas de données,pas de données
+candesartan,C09CA06,-,3,0,1,la donnée n'a pas pu être extraite
+capecitabine,L01BC06,No recorded data,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+captopril,C09AA01,-,pas de données,pas de données,pas de données,1
+carbachol,S01EB02,-,pas de données, 0 ,pas de données,pas de données
+carbamazepine,N03AF01,-,3,0,2,1
+carbetocin,H01BB03,-,pas de données,pas de données,pas de données,pas de données
+carboplatin,L01XA02,-, 3* , 0 , 1* ,pas de données
+carboprost,G02AD04,-,pas de données,pas de données,pas de données,pas de données
+carfilzomib,L01XX45,-,pas de données, 3 ,pas de données,pas de données
+carvedilol,C07AG02,-,pas de données,pas de données,pas de données,pas de données
+caspofungin,J02AX04,-, 3 , 0 , 3 ,0
+cefadroxil,J01DB05,-,pas de données,pas de données,pas de données,pas de données
+cefalexin,J01DB01,-,pas de données,pas de données,pas de données,pas de données
+cefepime,J01DE01,-, 3 , 0 , 0* ,0
+cefotaxime,J01DD01,-,pas de données, 0 ,pas de données,pas de données
+ceftazidime,J01DD02,-, 3 , 0 , 2 ,0
+ceftriaxone,J01DD04,-, 3 , 0 , 3* ,pas de données
+cefuroxime,S01AA27,-, 3 , 0 , 3* ,pas de données
+celecoxib,M01AH01,-,pas de données,pas de données,pas de données,pas de données
+certolizumabpegol,L04AB05,-,pas de données,pas de données,pas de données,pas de données
+cetirizine,R06AE07,-,pas de données,0,pas de données,1
+cetrorelix,H01CC02,-,pas de données,pas de données,pas de données,pas de données
+cetuximab,L01XC06,-,pas de données,pas de données,pas de données,pas de données
+chlorambucil,L01AA02,-, 0 , 0 , 2* ,pas de données
+chloramphenicol,S01AA01,-,pas de données,pas de données,pas de données,pas de données
+chlorhexidine,R02AA05,-, 3* , 0 , 3* ,pas de données
+chlorprothixene,N05AF03,-,pas de données,pas de données,pas de données,pas de données
+ciclesonide,R03BA08,-,3,0,pas de données,pas de données
+cilazapril,C09AA08,-, 3 , 0 , 1 ,0
+cimetidine,A02BA01,-, 3 , 0 , 0 ,0
+cinacalcet,H05BX01,-, 3 , 0 , 2 ,0
+ciprofloxacin,S03AA07,-,3,0,3,3
+cisatracurium,M03AC11,-, 0 , 0 , 2* ,pas de données
+cisplatin,L01XA01,-, 3* , 0 , 3 ,pas de données
+citalopram,N06AB04,-,pas de données,0,3,la donnée n'a pas pu être extraite
+cladribine,L01BB04,-, 3* , 0 , 2 ,0
+clarithromycin,J01FA09,-,3,0,3,la donnée n'a pas pu être extraite
+clemastine,R06AA04,-,pas de données, 3 ,pas de données,pas de données
+clindamycin,D10AF01,-,pas de données,0,pas de données,pas de données
+clobetasone,D07AB01,-,3,0,3,pas de données
+clodronicacid,M05BA02,-, 3 , 0 , 1 ,0
+clofarabine,L01BB06,-,pas de données,pas de données,pas de données,pas de données
+clomethiazole,N05CM02,-, 3 , 0 , 1 ,0
+clomipramine,N06AA04,-, 3 , 0 , 3* ,pas de données
+clonazepam,N03AE01,-, 3 , 0 , 1* ,0
+clonidine,C02AC01,-, 3 , 0 , 3* ,pas de données
+clopidogrel,B01AC04,-,3,0,1,0
+clotrimazole,D01AC01,-,3,3,2,0
+cloxacillin,J01CF02,-, 3 , 0 , 3* ,pas de données
+clozapine,N05AH02,-, 3 , 3 , 3 ,1
+codeine,R05DA04,-,pas de données, 0 ,pas de données,pas de données
+colchicine,M04AC01,-,pas de données,pas de données,pas de données,pas de données
+colecalciferol,A11CC05,"SummaryThis summary information comes from Fass (Baxter, Meda, Organon Sweden, Recip AB and Takeda Pharma).The use of vitamins is not considered to have any environmental impact.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+colestipol,C10AC02,-,pas de données,pas de données,pas de données,pas de données
+cyanocobalamin,B03BA01,"SummaryThis summary information comes from Fass (Baxter, Fresenius Kabi and Pfizer). Risk: The use of vitamins is not considered to have any environmental impact.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+cyclopentolate,S01FA04,-,pas de données, 0 ,pas de données,pas de données
+cyclophosphamide,L01AA01,-, 3 , 0 , 2 ,pas de données
+cyproheptadine,R06AX02,-, 3 , 3 , 3* ,pas de données
+cyproterone,G03HA01,-, 3 , 0 , 3* ,pas de données
+cytarabine,L01BC01,-,pas de données,pas de données,pas de données,pas de données
+dabigatranetexilate,B01AE07,-,3,0,1,0
+dacarbazine,L01AX04,-,pas de données,pas de données,pas de données,pas de données
+daclizumab,L04AC01,-,pas de données,pas de données,pas de données,pas de données
+dalteparin,B01AB04,"SummaryThe use of amino acids, proteins and peptides is not considered to have any environmental impact. This summary information comes from Fass.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+danaparoid,B01AB09,-,pas de données,pas de données,pas de données,pas de données
+dapagliflozin,A10BX09,-,3,0,1,0
+darbepoetinalfa,B03XA02,-,pas de données,pas de données,pas de données,pas de données
+darifenacin,G04BD10,-, 3 , 0 , 3 ,0
+darunavir,J05AE10,-, 3 , 0 , 2* ,0
+dasatinib,L01XE06,-, 3 , 0 , 2 ,1
+daunorubicin,L01DB02,-,pas de données,pas de données,pas de données,pas de données
+deferasirox,V03AC03,-, 3 , 0 , 3 ,0
+deferoxamine,V03AC01,-, 0 , 0 , 1* ,0
+denosumab,M05BX04,"SummaryRisk. The use of amino acids, proteins and peptides is not considered to have any environmental impact. This information comes from Fass.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+dequalinium,R02AA02,SummaryEnvironmental information is missing on fass.se (2022-04-11). It is voluntary for manufacturers to provide information about environmental impact on fass.se.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+desflurane,N01AB07,-,pas de données,pas de données,pas de données,pas de données
+desloratadine,R06AX27,-,3,0,1,1
+desmopressin,H01BA02,"SummaryDesmopressin is a peptide. Risk. The use of amino acids, proteins and peptides is not considered to have any environmental impact but see below for further information from Ferring. This summary information comes from Fass.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+desogestrel,G03AC09,-,3,0,3,2
+dexamethasone,H02AB02,-,pas de données, 0 ,pas de données,pas de données
+dexamfetamine,N06BA02,-,pas de données,pas de données,pas de données,pas de données
+dexrazoxane,V03AF02,-,pas de données,pas de données,pas de données,pas de données
+diazepam,N05BA01,-,pas de données,pas de données,pas de données,pas de données
+diboterminalfa,M05BC01,-,pas de données,pas de données,pas de données,pas de données
+diclofenac,M01AB05,-,3,0,1,pas de données
+dicloxacillin,J01CF01,-,pas de données,pas de données,pas de données,pas de données
+didanosine,J05AF02,-, 3 , 0 , 0* ,0
+dienogest,G03DB08,-,3,0,3,1
+digoxin,C01AA05,SummaryEnvironmental information is missing for digoxin on fass.se (2022-05-18). It is voluntary for manufacturers to provide information about environmental impact on fass.se.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+dihydrotachysterol,A11CC02,-,pas de données,pas de données,pas de données,pas de données
+diltiazem,C08DB01,-, 3 , 0 , 1* ,pas de données
+dinoprostone,G02AD02,-,pas de données,pas de données,pas de données,pas de données
+diphenhydramine,D04AA32,-,pas de données, 0 ,pas de données,pas de données
+dipyridamole,B01AC07,-, 3 , 0 , 2 ,1
+disopyramide,C01BA03,-, 3* , 0 , 1* ,pas de données
+disulfiram,N07BB01,-,pas de données,0,pas de données,pas de données
+docetaxel,L01CD02,-,pas de données, 0 ,pas de données,pas de données
+dolutegravir,J05AX12,-, 3 , 0 , 3 ,0
+donepezil,N06DA02,-,3,3, Acute toxicity data are available only for crustacean. ,0.0
+dopamine,C01CA04,-,pas de données,pas de données,pas de données,pas de données
+dorzolamide,S01EC03,-, 3 , 0 , 0* ,pas de données
+doxorubicin,L01DB01,-,pas de données,pas de données, 2* ,pas de données
+doxycycline,J01AA02,-,pas de données,pas de données,pas de données,pas de données
+droperidol,N05AD08,-,pas de données,pas de données,pas de données,pas de données
+dulaglutide,A10BX14,"SummaryRisk. The use of amino acids, proteins and peptides is not considered to have any environmental impact. Even though biomolecules, such as vaccines and hormones, are exempted they should still be regarded as biologically active. This summary information comes from Fass.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+duloxetine,N06AX21,-,3,0,3,1
+dutasteride,G04CB02,-, 3 , 0 , 2* ,0
+dydrogesterone,G03DB01,SummaryEnvironmental information is missing on fass.se for dydrogesterone (2021-04-21). It is voluntary for manufacturers to provide information on environmental impact on fass.se.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+ebastine,R06AX22,-,pas de données, 3 ,pas de données,1
+econazole,G01AF05,-,pas de données,pas de données,3,1
+eculizumab,L04AA25,-,pas de données,pas de données,pas de données,pas de données
+efavirenz,J05AG03,-, 3 , 0 , 3 ,0
+eletriptan,N02CC06,-, 3* , 0 , 2* ,pas de données
+emedastine,S01GX06,-,pas de données,0,pas de données,pas de données
+enalapril,C09AA02,-,pas de données,0,0,1
+enfuvirtide,J05AX07,-,pas de données,pas de données,pas de données,pas de données
+enoxaparin,B01AB05,-,pas de données,pas de données,pas de données,pas de données
+entacapone,N04BX02,-, 3 , 0 , 2* ,1
+entecavir,J05AF10,-, 3 , 0 , 1 ,0
+ephedrine,R01AB05,-,pas de données,0,pas de données,pas de données
+epinastine,S01GX10,-,pas de données,pas de données,pas de données,pas de données
+epinephrine,C01CA24,-,pas de données,0,pas de données,pas de données
+epirubicin,L01DB03,-,pas de données,pas de données,pas de données,pas de données
+eplerenone,C03DA04,SummaryEnvironmental information is missing on fass.se (2022-04-26). It is voluntary for manufacturers to provide information about environmental impact on fass.se.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+eprosartan,C09CA02,-, 3 , 0 , 0 ,pas de données
+eptifibatide,B01AC16,-,pas de données, 0 ,pas de données,pas de données
+erlotinib,L01XE03,-, 3 , 0 , 0 ,0
+erythromycin,D10AF02,-,3,0,3,pas de données
+escitalopram,N06AB10,-,3,0,2,la donnée n'a pas pu être extraite
+esmolol,C07AB09,-,pas de données,pas de données,pas de données,pas de données
+esomeprazole,A02BC05,-,0,0,1,0
+estradiol,G03CA03,-,3,0,3,la donnée n'a pas pu être extraite
+estramustine,L01XX11,-,pas de données,pas de données,pas de données,pas de données
+estriol,G03CA04,"SummaryEnvironmental information is missing on fass.se for estriol (2021-04-21). It is voluntary for manufacturers to provide information about environmental impact on fass.se.Pharmaceutial residues in the aquatic environment in SwedenReport Pharmaceutial residues in the Stockholm aquatic environment. Estriol has been measured in treated wastewater at concentrations up to 20 ng/L in Stockholm, Sweden. The reduction rate in the wastewater treatment plants Henriksdal and Bromma is reported to be 98 %.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+etanercept,L04AB01,"SummaryEtanercept is a protein. Risk. Use of amino acids, proteins and peptides is not considered to cause any environmental impact.  This summary information comes from Fass and corresponding information can be found in assessment reports. In the environmental information from Sandoz AS and Pfizer: Even though biomolecules are exempted they should still be regarded as biologically active. ",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+ethosuximide,N03AD01,-,pas de données,pas de données,pas de données,pas de données
+ethylmorphine,R05DA01,-,pas de données,pas de données,pas de données,pas de données
+etidronicacid,M05BA01,-, 3 , 0 , 2 ,0
+etilefrine,C01CA01,-, 3 , 3* , 2* ,pas de données
+etonogestrel,G03AC08,-,3,0,3, There is a risk associated with the use of etonogestrel/desogestrel and that these substances appear additive with other androgenic gestagens in the environment
+etoposide,L01CB01,-, 3* , 0 , 0* ,pas de données
+etoricoxib,M01AH05,-, 3 , 0 , 1 ,1
+etravirine,J05AG04,-, 3 , 0 , 3* ,0
+everolimus,L01XE10,-, 3 , 3 , 2 ,0
+exemestane,L02BG06,-,pas de données,pas de données,pas de données,pas de données
+exenatide,A10BX04,-,pas de données,pas de données,pas de données,pas de données
+ezetimibe,C10AX09,-,3,0,2,la donnée n'a pas pu être extraite
+famciclovir,J05AB09,-, 3 , 0 , 0 ,0
+febuxostat,M04AA03,-,pas de données,pas de données,pas de données,pas de données
+felbamate,N03AX10,-, 3 , 0 , 1* ,pas de données
+felodipine,C08CA02,-,3,0,3,pas de données
+fenofibrate,C10AB05,-,3," All fibrates examined are fat soluble with a log P between 3.9 and 5.2. This is likely low enough for some to be found in soluble form in surface water, but at the same time high enough to bioconcentrate effectively",0,0
+fentanyl,N02AB03,-, 3 , 0 , 1 ,pas de données
+fesoterodine,G04BD11,-, 0 , 0 , 0 ,0
+fexofenadine,R06AX26,-, 3 , 0 , 0 ,pas de données
+filgrastim,L03AA02,-,pas de données,pas de données,pas de données,pas de données
+finasteride,G04CB01,-,3,0,2,0
+fingolimod,L04AA27,-, 0 , 0 , 3 ,0
+flecainide,C01BC04,-,pas de données,pas de données,pas de données,pas de données
+flucloxacillin,J01CF05,-,pas de données,0,pas de données,pas de données
+fluconazole,J02AC01,-,pas de données,0,pas de données,pas de données
+fludarabine,L01BB05,-,pas de données,pas de données,pas de données,pas de données
+flumazenil,V03AB25,-, 3 , 0 , 1 ,0
+flunitrazepam,N05CD03,-, 3 , 0 , 1* ,pas de données
+fluocinoloneacetonide,C05AA10,-,pas de données,pas de données,pas de données,pas de données
+fluorescein,S01JA01,-,pas de données, 0 ,pas de données,pas de données
+fluorouracil,L01BC02,-,pas de données,0,pas de données,pas de données
+fluoxetine,N06AB03,-,3,0,3,la donnée n'a pas pu être extraite
+flupentixol,N05AF01,-,pas de données,3,pas de données,la donnée n'a pas pu être extraite
+fluphenazine,N05AB02,-, 3 , 0 , 3* ,pas de données
+flutamide,L02BB01,-,pas de données, 0 ,pas de données,pas de données
+fluticasonefuroate,R01AD12,-,3,0,3,1
+fluvastatin,C10AA04,-, 3 , 0 , 1 ,0
+fluvoxamine,N06AB08,-, 3 , 0 , 3 ,0
+folicacid,B03BB01,SummaryExempt according to fass.se.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+follitropinalfa,G03GA05,"SummaryFollitropin alfa has the same structure and activity as endogenous FSH. FSH is a pituitary hormone that controls the reproductive system in both males and females. Given the characteristics above, the performance of specific studies for Environmental Risk Assessment was not requested as proteins are biodegradable in the environment. Therefore, Bemfola/Ovaleap (follitropin alfa) is not expected to pose a risk to the environment. This summary information comes from assessment reports.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+follitropinbeta,G03GA06,-,pas de données,pas de données,pas de données,pas de données
+fondaparinux,B01AX05,-,pas de données,pas de données,pas de données,0
+formoterol,R03AC13,-,3,0,1,0
+fosamprenavir,J05AE07,-, 3 , 0 , 0 ,0
+fosinopril,C09AA09,-, 3 , 0 , 1* ,0
+fosphenytoin,N03AB05,-,pas de données,pas de données,pas de données,pas de données
+framycetin,R01AX08,-,pas de données, 0 ,pas de données,pas de données
+fulvestrant,L02BA03,-, 0 , 0 , 3 ,1
+furosemide,C03CA01,-,3,0,0,0
+fusidicacid,D06AX01,-,pas de données,0,pas de données,pas de données
+gabapentin,N03AX12,-,pas de données,0,pas de données,pas de données
+gadobutrol,V08CA09,-, 3 , 0 , 1* ,pas de données
+gadodiamide,V08CA03,-, 3 , 0 , 0 ,0
+gadopenteticacid,V08CA01,-, 3 , 0 , 1 ,0
+gadotericacid,V08CA02,-,pas de données,pas de données,pas de données,pas de données
+gadoversetamide,V08CA06,-,pas de données,pas de données,pas de données,pas de données
+galantamine,N06DA04,-,3,pas de données,3,1
+ganciclovir,J05AB06,-, 3 , 0 , 0 ,0
+ganirelix,H01CC01,-,pas de données,3,pas de données,pas de données
+gefitinib,L01XE02,-, 3 , 0 , 2* ,0
+gemcitabine,L01BC05,-, 3 , 0 , 2 ,0
+gemfibrozil,C10AB04,-,pas de données," All fibrates examined are fat soluble with a log P between 3.9 and 5.2. This is likely low enough for some to be found in soluble form in surface water, but at the same time high enough to bioconcentrate effectively"," Ecotoxicological studies are extensive for gemfibrozil and scarce for other fibrates. However, many studies are considered to be of low quality and reliability. Available and reliable efficacy data indicate a very low risk for all investigated fibrates",0
+gentamicin,S01AA11,-, 3 , 0 , 3 ,pas de données
+ginkgobiloba,N06DX02,-,pas de données,pas de données,pas de données,pas de données
+glibenclamide,A10BB01,-,3,3,0,la donnée n'a pas pu être extraite
+glimepiride,A10BB12,-,3,0,0,la donnée n'a pas pu être extraite
+glipizide,A10BB07,-, 3* , 0 , 1* ,pas de données
+glucagon,H04AA01,"SummaryThe use of amino acids, proteins and peptides is not considered to have any environmental impact. This summary information comes from Fass.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+glucosamine,M01AX05,-,pas de données,pas de données,pas de données,pas de données
+glyceryltrinitrate,C01DA02,-,3,0,3,0
+glycopyrroniumbromide,A03AB02,-,3,0,1,0
+golimumab,L04AB06,-,pas de données,pas de données,pas de données,pas de données
+goserelin,L02AE03,-,pas de données,pas de données,pas de données,pas de données
+granisetron,A04AA02,-, 3 , 0 , 1 ,0
+guaifenesin,R05CA03,-,pas de données, 0 ,pas de données,pas de données
+haloperidol,N05AD01,-,pas de données,3,2,la donnée n'a pas pu être extraite
+heparin,B01AB01,SummaryHeparin is a polysaccharide (carbohydrate). Risk. Use of carbohydrates has been considered to result in insignificant environmental impact. This summary information comes from Fass.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+hyaluronicacid,M09AX01,-,pas de données,pas de données,pas de données,pas de données
+hydrochlorothiazide,C03AA03,-,3,0,0,0
+hydrocortisone,D07AA02,-,pas de données,0,pas de données," Although both exposure and efficacy data are incomplete for hydrocortisone and prednisolone, there are no strong indications of environmental risk for these two substances. On the contrary, the fish plasma model and reported levels in the environment indicate low risk"
+hydromorphone,N02AA03,-,pas de données,pas de données,pas de données,pas de données
+hydroxocobalamin,V03AB33,-,pas de données,pas de données,pas de données,pas de données
+hydroxycarbamide,L01XX05,-, 3 , 0 , 0 ,0
+hydroxychloroquine,P01BA02,-,3,0,2,0
+hydroxyzine,N05BB01,-,pas de données, 0 ,pas de données,pas de données
+hypromellose,S01KA02,-,pas de données,pas de données,pas de données,pas de données
+ibandronicacid,M05BA06,-, 0 , 0 , 2 ,0
+ibuprofen,M01AE01,-,3,0,2,la donnée n'a pas pu être extraite
+idarubicin,L01DB06,-,pas de données,pas de données,pas de données,pas de données
+ifosfamide,L01AA06,-, 3 , 0 , 3* ,pas de données
+iloprost,B01AC11,-, 0 , 0 , 1* ,pas de données
+imatinib,L01XE01,-, 3 , 0 , 2 ,0
+imipramine,N06AA02,-, 3 , 3 , 3 ,pas de données
+imiquimod,D06BB10,-,pas de données,0,pas de données,pas de données
+indacaterol,R03AC18,-,3,0,0,0
+indinavir,J05AE02,-, 0 , 0 , 1* ,0
+indometacin,M01AB01,-, 3 , 0 , 2* ,pas de données
+infliximab,L04AB02,"SummaryRisk. Use of amino acids, proteins and peptides is not considered to cause any environmental impact.  This summary information comes from Fass and corresponding information can be found in assessment reports. In the environmental information from MSD: ""Even though biomolecules are exempted from environmental risk classification it should be remembered that these molecules may be biologically active.""",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+iobitridol,V08AB11,-, 3 , 0 , 0 ,0
+iodixanol,V08AB09,-, 3 , 0 , 0 ,0
+iohexol,V08AB02,-, 3 , 0 , 0 ,0
+iomeprol,V08AB10,-, 3 , 0 , 0 ,0
+iopromide,V08AB05,-, 3 , 0 , 0 ,0
+ioversol,V08AB07,-,pas de données,pas de données,pas de données,pas de données
+ioxaglicacid,V08AB03,-,pas de données,pas de données,pas de données,pas de données
+ipilimumab,L01XC11,-,pas de données,pas de données,pas de données,pas de données
+irbesartan,C09CA04,-,3,3,0,la donnée n'a pas pu être extraite
+irinotecan,L01XX19,-,pas de données,pas de données,pas de données,pas de données
+isoflurane,N01AB06,-,pas de données,pas de données,pas de données,pas de données
+isoniazid,J04AC01,-, 3 , 0 , 3* ,pas de données
+isosorbidemononitrate,C01DA14,-,pas de données,0,1,pas de données
+isotretinoin,D10BA01,-,pas de données,pas de données,pas de données,pas de données
+isradipine,C08CA03,-, 3 , 3 , 3 ,0
+itraconazole,J02AC02,-, 3 , 3 , 0 ,0
+ketamine,N01AX03,-,pas de données,pas de données,pas de données,pas de données
+ketoconazole,D01AC08,-,3,3,3,1
+ketoprofen,M01AE03,-,3,0,2,1
+ketorolac,S01BC05,-, 3 , 0 , 1 ,0
+ketotifen,S01GX08,SummaryEnvironmental information on ketotifen is missing on fass.se (2021-10-15). It is voluntary for manufacturers to provide information about environmental impact on fass.se.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+labetalol,C07AG01,-,pas de données,pas de données,pas de données,pas de données
+lactitol,A06AD12,-,pas de données,pas de données,pas de données,pas de données
+lactulose,A06AD11,SummaryRisk. The use of carbohydrates is not considered to cause any environmental impact. This summary information comes from Fass.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+lamivudine,J05AF05,-, 3 , 0 , 1 ,0
+lamotrigine,N03AX09,-,3,0,0,la donnée n'a pas pu être extraite
+lanreotide,H01CB03,-,pas de données,pas de données,pas de données,pas de données
+lansoprazole,A02BC03,-, 3 , 0 , 1 ,pas de données
+latanoprost,S01EE01,-,pas de données,0,pas de données,pas de données
+leflunomide,L04AA13,-, 3 , 0 , 2 ,0
+lenograstim,L03AA10,-,pas de données,pas de données,pas de données,pas de données
+lercanidipine,C08CA13,-,pas de données,3,pas de données,pas de données
+letrozole,L02BG04,-,3,0,3,0
+leuprorelin,L02AE02,-,pas de données, 0 ,pas de données,pas de données
+levetiracetam,N03AX14,-,3,0,1, No obvious environmental risk from a Swedish perspective
+levobupivacaine,N01BB10,-,pas de données, 0 ,pas de données,pas de données
+levocabastine,R01AC02,-,3, Levocabastine has no significant bioaccumulation potential,1,0
+levofloxacin,J01MA12,-,pas de données, 0 ,pas de données,0
+levomepromazine,N05AA02,-, 3 , 0 , 3* ,pas de données
+levonorgestrel,G03AD01,-,3," Levonorgestrel is below the limit value for high potential to bioaccumulate, but the substance binds to Sex Hormone Binding Globulin (SHBG) and just binding to SHBG is assumed to contribute to the exceptionally high bioconcentration ability (and thus potency) observed in fish for levonorgestrel",3,3
+lidocaine,C05AD01,-,3,0,1,0
+linaclotide,A06AX04,-,pas de données, ,0.0,0.0
+linagliptin,A10BH05,-,3,0,0,0
+linezolid,J01XX08,-,pas de données,pas de données,pas de données,pas de données
+lipegfilgrastim,L03AA14,-,pas de données,pas de données,pas de données,pas de données
+liraglutide,A10BX07,"SummaryThe active substance liraglutide is a peptide and is not considered to have any environmental impact. However, Fass writes the following: Even though biomolecules, such as vaccines and hormones, are exempted they should still be regarded as biologically active. This summary information comes from assessement reports and Fass.se.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+lisinopril,C09AA03,-, 3 , 0 , 0 ,1
+lithium,N05AN01,-,pas de données,pas de données,pas de données,pas de données
+lixisenatide,A10BX10,-,pas de données,pas de données,pas de données,pas de données
+lomustine,L01AD02,-,pas de données,pas de données,pas de données,pas de données
+loperamide,A07DA03,-,pas de données,pas de données,pas de données,pas de données
+loratadine,R06AX13,-, 3 , 0 , 2 ,1
+lorazepam,N05BA06,-,pas de données,pas de données,pas de données,pas de données
+losartan,C09CA01,-,3,3,0,la donnée n'a pas pu être extraite
+lutropinalfa,G03GA07,-,pas de données,pas de données,pas de données,pas de données
+lymecycline,J01AA04,SummaryRisk. See the report from Goodpoint. Environmental information is missing on fass.se for lymecycline (2022-08-17). It is voluntary for manufacturers to provide information on environmental impact on fass.se. Lymphcycline is rapidly hydrolysed to active tetracycline upon absorption. See also tetracycline.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+lynestrenol,G03AC02,-,pas de données, 3 ,pas de données,pas de données
+macitentan,C02KX04,-,pas de données, 0 ,pas de données,pas de données
+macrogol,A06AD15,-,3,0,0,1
+magnesiumchloride,A12CC01,-,pas de données,pas de données,pas de données,pas de données
+mangafodipir,V08CA05,-, 3 , 0 , 1 ,pas de données
+maprotiline,N06AA21,-, 3 , 0 , 3 ,pas de données
+mebendazole,P02CA01,-, 3* , 0 , 3 ,0
+meclozine,R06AE05,-,pas de données,pas de données,pas de données,la donnée n'a pas pu être extraite
+mefloquine,P01BC02,-, 3 , 0 , 3 ,0
+megestrol,L02AB01,-, 3 , 3 , 3 ,pas de données
+melatonin,N05CH01,-,pas de données,0,pas de données,pas de données
+meloxicam,M01AC06,-, 3 , 0 , 1 ,0
+melperone,N05AD03,-,pas de données,pas de données,pas de données,pas de données
+melphalan,L01AA03,-, 0 , 0 , 2* ,pas de données
+memantine,N06DX01,-,pas de données,pas de données,pas de données,1
+mepivacaine,N01BB03,-, 3* , 0 , 1* ,pas de données
+mercaptopurine,L01BB02,-, 3 , 0 , 1* ,pas de données
+meropenem,J01DH02,-, 3 , 0 , 3 ,0
+mesalazine,A07EC02,-,pas de données,0,pas de données,pas de données
+metformin,A10BA02,-,3,0,1,1
+methadone,N07BC02,-,pas de données, 0 ,pas de données,pas de données
+methenamine,J01XX05,-,pas de données,pas de données,pas de données,pas de données
+methotrexate,L01BA01,-,pas de données,0,2, Exceptional good margin between exposure based on Swedish conditions and  and known effect level. Data as basis for B and T are from the assessment report for Jylamvo. The information about B is also supported by Fass. The risk comes from the report by Goodpoint 2016
+methylaminolevulinate,L01XD03,-, 3 , 0 , 3* ,pas de données
+methylergometrine,G02AB01,-,pas de données,pas de données,pas de données,pas de données
+methylphenidate,N06BA04,-,3,0,2,0
+methylprednisolone,H02AB04,-,pas de données,pas de données,pas de données,pas de données
+metoclopramide,A03FA01,-,3,0,1,0
+metoprolol,C07AB02,-,3,0,1,1
+metronidazole,J01XD01,-,3,0,0,la donnée n'a pas pu être extraite
+mianserin,N06AX03,-,pas de données, 0 ,pas de données,pas de données
+miconazole,G01AF04,-,3,3,2,1
+midazolam,N05CD08,-,pas de données,3,pas de données,pas de données
+mifepristone,G03XB01,-,3,0,3,0
+milrinone,C01CE02,-, 3 , 0 , 1* ,pas de données
+minoxidil,D11AX01,-,pas de données,pas de données,pas de données,pas de données
+mirabegron,G04BD12,-, 0 , 0 , 0 ,0
+mirtazapine,N06AX11,-,3,0,1,la donnée n'a pas pu être extraite
+misoprostol,A02BB01,-,pas de données,pas de données,pas de données,pas de données
+mitomycin,L01DC03,-, 3 , 0 , 3 ,pas de données
+mitoxantrone,L01DB07,-,pas de données, 0 ,pas de données,pas de données
+mizolastine,R06AX25,-,pas de données,pas de données,pas de données,pas de données
+moclobemide,N06AG02,-, 3 , 0 , 1 ,pas de données
+modafinil,N06BA07,-,pas de données, 0 ,pas de données,pas de données
+montelukast,A10BX10,-,3,3,2,0
+morphine,N02AA01,-,pas de données,0,pas de données,pas de données
+moxifloxacin,J01MA14,-, 3 , 0 , 3* ,pas de données
+moxonidine,C02AC05,-, 3 , 0 , 2 ,0
+mupirocin,R01AX06,-, 3* , 0 , 0* ,pas de données
+mycophenolicacid,L04AA06,-,3,0,3,2
+nabumetone,M01AX01,-,pas de données, 0 ,pas de données,pas de données
+nafarelin,H01CA02,"SummaryRisk: Use of amino acids, proteins and peptides is not considered to cause any environmental impact. This summary information comes from Fass.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+naloxone,V03AB15,-, 3 , 0 , 1 ,pas de données
+naltrexone,N07BB04,-,pas de données,pas de données,pas de données,pas de données
+nandrolone,A14AB01,-,pas de données,pas de données,pas de données,pas de données
+naphazoline,S01GA01,-, 3 , 3* , 1* ,pas de données
+naproxen,M01AE02,-,3,0,2,1
+naratriptan,N02CC02,-, 3 , 0 , 0 ,0
+natalizumab,L04AA23,-,pas de données,pas de données,pas de données,pas de données
+nelarabine,L01BB07,-, 3 , 0 , 0 ,0
+neostigmine,N07AA01,-,pas de données,pas de données,pas de données,pas de données
+nepafenac,S01BC10,-,pas de données, 0 ,pas de données,pas de données
+netilmicin,J01GB07,-,pas de données,pas de données,pas de données,pas de données
+nevirapine,J05AG01,-, 3 , 0 , 1 ,0
+niclosamide,P02DA01,-,pas de données,pas de données,pas de données,pas de données
+nicotine,N07BA01,-, 0 , 0 , 3 ,1
+nifedipine,C08CA05,-, 3 , 0 , 2* ,pas de données
+nilotinib,L01XE08,-, 3 , 0 , 3 ,pas de données
+nintedanib,L01XE31,-, 3 , 0 , 3 ,0
+nitrazepam,N05CD02,-,pas de données,pas de données,pas de données,pas de données
+nitrofurantoin,J01XE01,-,pas de données,0,pas de données,1
+nivolumab,L01XC17,-,pas de données,pas de données,pas de données,pas de données
+nomegestrol,G03DB04,-,3,0,3,0
+norepinephrine,C01CA03,-,pas de données, 0 ,pas de données,pas de données
+norethisterone,G03DC02,-,3,0,3,3
+norfloxacin,S01AE02,"SummaryAll medicinal products with norfloxacin have been withdrawn from the Swedish market. Previously, there was some risk for the selection of antibiotic resistant bacteria in wastewater treatment plants in Sweden.Studies have shown that even low concentrations of antibiotics in the environment may trigger antibiotic resistance and should therefore be taken to ensure that as little as possible end up in our environment.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+nortriptyline,N06AA10,-,pas de données,pas de données,pas de données,pas de données
+noscapine,R05DA07,-,pas de données, 0 ,pas de données,pas de données
+nystatin,A07AA02,-,pas de données,pas de données,pas de données,pas de données
+octreotide,H01CB02,-,pas de données,pas de données,pas de données,pas de données
+ofloxacin,J01MA01,"SummaryOnly Ofloxacin mibe eye drops has marketing authorisation in Sweden, but the medinal product is not currently available according to Fass.se (2022-11-16). There is no environmental information on Fass.se.Ofloxacin is included on the watch list of substances for Union-wide monitoring in the field of water policy pursuant to Directive 2008/105/EC of the European Parliament and of the Council.Ofloxacin is a racemate. One of the enantiomers is levofloxacin (S-enantiomer). Therefore, see also environmental information for levofloxacin.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+olaparib,L01XX46,-, 3 , 0 , 1* ,0
+olopatadine,S01GX09,-,pas de données, 0 ,pas de données,pas de données
+omalizumab,R03DX05,-,pas de données,pas de données,pas de données,pas de données
+omeprazole,A02BC01,-,3,0,1,0
+ondansetron,A04AA01,-,3,0,1,0
+orlistat,A08AB01,-, 3 , 3 , 2 ,0
+oseltamivir,J05AH02,-,3,0,1,0
+oxaliplatin,L01XA03,-, 3 , 0 , 3* ,pas de données
+oxazepam,N05BA04,-,pas de données,pas de données,pas de données,la donnée n'a pas pu être extraite
+oxcarbazepine,N03AF02,-,3,0,1, No obvious environmental risk from a Swedish perspective
+oxybutynin,G04BD04,-,pas de données,pas de données,pas de données,pas de données
+oxycodone,N02AA05,-,pas de données,0,pas de données,pas de données
+oxymetazoline,S01GA04,-, 3* , 0 , 2* ,pas de données
+oxytetracycline,J01AA06,-,pas de données,pas de données,pas de données,pas de données
+oxytocin,H01BB02,-,pas de données,pas de données,pas de données,pas de données
+paclitaxel,L01CD01,-, 0 , 3 , 3* ,pas de données
+paliperidone,N05AX13,-, 3 , 0 , 1 ,0
+palonosetron,A04AA05,-,pas de données,pas de données,pas de données,pas de données
+pamidronicacid,M05BA03,-,pas de données,pas de données,pas de données,pas de données
+pancuronium,M03AC01,-,pas de données, 0 ,pas de données,pas de données
+panitumumab,L01XC08,-,pas de données,pas de données,pas de données,pas de données
+pantoprazole,A02BC02,-, 3 , 0 , 1 ,0
+papaverine,A03AD01,-,pas de données,pas de données,pas de données,pas de données
+paracetamol,N02BE01,-,0,0,1,0
+parathyroidhormone,H05AA03,-,pas de données,pas de données,pas de données,pas de données
+paroxetine,N06AB05,-, 3 , 0 , 3 ,pas de données
+pegaptanib,S01LA03,-,pas de données,pas de données,pas de données,pas de données
+pegfilgrastim,L03AA13,-,pas de données,pas de données,pas de données,pas de données
+pegvisomant,H01AX01,-,pas de données,pas de données,pas de données,pas de données
+pembrolizumab,L01XC18,-,pas de données,pas de données,pas de données,pas de données
+pemetrexed,L01BA04,-, 0 , 0 , 1 ,0
+penciclovir,D06BB06,-, 3 , 0 , 0* ,0
+pentoxyverine,R05DB05,-,pas de données,pas de données,pas de données,pas de données
+permethrin,P03AC04,-, 3 , 3 , 3 ,2
+perphenazine,N05AB03,-,pas de données, 3 ,pas de données,pas de données
+pethidine,N02AB02,-,pas de données,pas de données,pas de données,pas de données
+phenoxymethylpenicillin,J01CE02,-,pas de données,0,pas de données,pas de données
+phentolamine,C04AB01,-,pas de données,pas de données,pas de données,pas de données
+phenytoin,N03AB02,No recorded data,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+phytomenadione,B02BA01,No recorded data,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+pilocarpine,S01EB01,No recorded data,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+pimecrolimus,D11AH02,-,pas de données,pas de données,pas de données,pas de données
+pindolol,C07AA03,No recorded data,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+pioglitazone,A10BG03,No recorded data,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+piperacillin,J01CA12,No recorded data,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+piroxicam,M01AC01,No recorded data,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+pivmecillinam,J01CA08,-,pas de données,pas de données,pas de données,pas de données
+pizotifen,N02CX01,-, 3 , 3 , 3* ,pas de données
+podophyllotoxin,D06BB04,-,pas de données,pas de données,pas de données,pas de données
+polymyxinb,J01XB02,-,pas de données,pas de données,pas de données,pas de données
+posaconazole,J02AC04,-, 3 , 0 , 2 ,0
+potassiumchloride,B05XA01,SummaryRisk. The use of electrolytes is not considered to have any environmental impact. The information comes from Fass.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+pramipexole,N04BC05,-,3,0,1,0
+prasugrel,B01AC22,-,3,0,1,0
+pravastatin,C10AA03,-, 3 , 0 , 1 ,1
+prednisolone,H02AB06,-,pas de données,0,pas de données," Although both exposure and efficacy data are incomplete for hydrocortisone and prednisolone, there are no strong indications of environmental risk for these two substances. On the contrary, the fish plasma model and reported levels in the environment indicate low risk"
+prednisone,H02AB07,-,pas de données, 0 ,pas de données,pas de données
+pregabalin,N03AX16,-, 3 , 0 , 0* ,0
+prilocaine,N01BB04,-,pas de données,0,pas de données,pas de données
+probenecid,M04AB01,-,pas de données,pas de données,pas de données,pas de données
+progesterone,G03DA04,-,pas de données,pas de données,pas de données,pas de données
+proguanil,P01BB01,-, 3 , 0 , 3 ,0
+promethazine,D04AA10,-,pas de données,3," Studies on the toxicity have only been carried out on one specie (water flea shows effects on reproduction at 180 microg/L), that makes a calculation of the environmental risk becomes uncertain"," Promethazine is not as well investigated for effects, but the substance has a fat solubility that indicates high potential for bioaccumulation. However, despite investigations in many countries, including Sweden, promethazine has not been detected in wastewater. The environmental risk of promethazine is therefore considered low"
+propofol,N01AX10,-,3,0,1,1
+propranolol,C07AA05,-,3,0,3,0
+prucalopride,A06AX05,-,3,0,1,0
+pseudoephedrine,R01BA02,-,pas de données,pas de données,pas de données,pas de données
+pyridostigmine,N07AA02,-, 3* , 0 , 3 ,pas de données
+pyrvinium,P02CX01,-,pas de données,pas de données,pas de données,pas de données
+quetiapine,N05AH04,-,3,0,1,0
+quinagolide,G02CB04,-,pas de données,pas de données,pas de données,pas de données
+quinapril,C09AA06,-,pas de données,pas de données,pas de données,pas de données
+rabeprazole,A02BC04,-, 3* , 0 , 2 ,0
+raloxifene,G03XC01,-, 3 , 3 , 2 ,pas de données
+ramipril,C09AA05,-,3,0,0," Although the environmental risk is highest for ramipril (comparative environmental risk assessment using enalapril, ramipril, lisinopril and captopril from a Swedish perspective), the overall evidence for environmental risk is still low"
+ramucirumab,L01XC21,-,pas de données,pas de données,pas de données,pas de données
+ranibizumab,S01LA04,-,pas de données,pas de données,pas de données,pas de données
+ranitidine,A02BA02,-, 3 , 0 , 1 ,0
+rasagiline,N04BD02,-,pas de données,pas de données, 3* ,pas de données
+rasburicase,V03AF07,-,pas de données,pas de données,pas de données,pas de données
+reboxetine,N06AX18,-,pas de données,pas de données,pas de données,pas de données
+regorafenib,L01XE21,-, 3 , 3 , 3 ,pas de données
+remifentanil,N01AH06,-,3,0,1,pas de données
+repaglinide,A10BX02,-,3,0,0,pas de données
+retapamulin,D06AX13,-, 3 , 0 , 2* ,pas de données
+reteplase,B01AD07,-,pas de données,pas de données,pas de données,pas de données
+retigabine,N03AX21,-, 3 , 0 , 3 ,0
+ribavirin,J05AB04,-, 3 , 0 , 1 ,0
+rifabutin,J04AB04,-,pas de données,pas de données,pas de données,pas de données
+rifaximin,A07AA11,-,3,0,3,1
+riluzole,N07XX02,-, 3 , 3* , 2* ,pas de données
+rimexolone,S01BA13,-,pas de données, 0 ,pas de données,pas de données
+risedronicacid,M05BA07,-, 3* , 0 , 3 ,0
+risperidone,N05AX08,-,3,0,2,la donnée n'a pas pu être extraite
+ritonavir,J05AE03,-,3,3,2,0
+rituximab,L01XC02,-,pas de données,pas de données,pas de données,pas de données
+rivaroxaban,B01AF01,-,3,0,2,0
+rivastigmine,N06DA03,-,3,0,1,1
+rizatriptan,N02CC04,-, 3 , 0 , 1 ,0
+romiplostim,B02BX04,-,pas de données,pas de données,pas de données,pas de données
+ropinirole,N04BC04,-, 3 , 0 , 1 ,0
+ropivacaine,N01BB09,-,3, Ropivacaine has no significant bioaccumulation potential,1,0
+rosuvastatin,C10AA07,-,3,0,2,0
+roxithromycin,J01FA06,-,pas de données,0,3,la donnée n'a pas pu être extraite
+salbutamol,R03AC02,-,3,0,0,pas de données
+salmeterol,R03AC12,-,3,0,0,0
+saquinavir,J05AE01,-, 3 , 3 , 1 ,0
+sarilumab,L04AC14,-,pas de données,pas de données,pas de données,pas de données
+saxagliptin,A10BH03,-, 0 , 0 , 2* ,0
+scopolamine,N05CM05,-,pas de données, 0 ,pas de données,pas de données
+selegiline,N04BD01,-,pas de données, 0 ,pas de données,pas de données
+semaglutide,A10BJ06,"SummaryThe active substance semaglutide is a peptide and is not considered to have any environmental impact. However, Fass writes the following: Even though biomolecules, such as vaccines and hormones, are exempted they should still be regarded as biologically active. This summary information comes from assessement reports and Fass.se",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+sertindole,N05AE03,-,pas de données, 0 ,pas de données,pas de données
+sertraline,N06AB06,-,3,0,3,la donnée n'a pas pu être extraite
+sevelamer,V03AE02,-,pas de données,pas de données,pas de données,pas de données
+sibutramine,A08AA10,-, 3 , 0 , 3 ,pas de données
+sildenafil,G04BE03,-,3,0,2,0
+simvastatin,C10AA01,-,3,3,3," More fat-soluble statins (simvastatin, atorvastatin) may be quite potent and (together with ezetimibe) represent a slightly higher risk than the others, but the levels in the environment are probably well below the concentrations that give rise to effects in Sweden"
+sitagliptin,A10BH01,-, 3 , 0 , 1 ,0
+sodiumbicarbonate,B05XA02,SummaryRisk. The use of electrolytes is not considered to cause any environmental impact. The information comes from Fass.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+sodiumchloride,B05CB01,-,pas de données,pas de données,pas de données,pas de données
+sodiumfluoride,A01AA01,-,pas de données,pas de données,pas de données,pas de données
+sodiumglycerophosphate,B05XA14,-,pas de données,pas de données,pas de données,pas de données
+sodiumpicosulfate,A06AB08,SummaryRisk. The use of electrolytes is not considered to cause any environmental impact.The data on risk are based on previous environmental information on fass.se. Environmental information is missing (2023-01-23). It is voluntary for manufacturers to provide information about environmental impact on fass.se.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+solifenacin,G04BD08,-,pas de données,pas de données,pas de données,pas de données
+somatropin,H01AC01,-,pas de données,pas de données,pas de données,pas de données
+sorafenib,L01XE05,-, 3 , 3 , 3 ,pas de données
+sorbitol,A06AD18,-,pas de données,pas de données,pas de données,pas de données
+sotalol,C07AA07,-,pas de données,pas de données,pas de données,pas de données
+spironolactone,C03DA01,-,pas de données,pas de données,pas de données,pas de données
+streptokinase,B01AD01,-,pas de données,pas de données,pas de données,pas de données
+sufentanil,N01AH03,-,pas de données,pas de données,pas de données,pas de données
+sugammadex,V03AB35,-, 3 , 0 , 1* ,0
+sulfasalazine,A07EC01,-,pas de données,pas de données,pas de données,pas de données
+sulindac,M01AB02,-,pas de données,pas de données,pas de données,pas de données
+sumatriptan,N02CC01,-,3,0,0,0
+sunitinib,L01XE04,-, 3* , 0 , 3 ,0
+suxamethonium,M03AB01,-,pas de données,0,pas de données,pas de données
+tacrolimus,L04AD02,-,pas de données,pas de données,pas de données,pas de données
+tadalafil,G04BE08,-,3,0,1,0
+tafluprost,S01EE05,-,pas de données,pas de données,pas de données,pas de données
+tamoxifen,L02BA01,-,pas de données,pas de données,pas de données,pas de données
+tapentadol,N02AX06,-, 3 , 0 , 1 ,0
+tasonermin,L03AX11,-,pas de données,pas de données,pas de données,pas de données
+teicoplanin,J01XA02,-,pas de données, 0 ,pas de données,pas de données
+telaprevir,J05AE11,-, 3 , 0 , 3* ,0
+telithromycin,J01FA15,-, 3 , 0 , 3* ,0
+telmisartan,C09CA07,-, 3 , 0 , 1 ,pas de données
+temozolomide,L01AX03,-, 0 , 0 , 1 ,0
+tenecteplase,B01AD11,-,pas de données,pas de données,pas de données,pas de données
+tenoxicam,M01AC02,-,pas de données,0,pas de données,pas de données
+terazosin,G04CA03,-, 3 , 0 , 3* ,pas de données
+terbinafine,D01BA02,-,3,3,3,1
+terbutaline,R03AC03,-, 3 , 0 , 0 ,pas de données
+teriflunomide,L04AA31,-, 3 , 0 , 1 ,0
+teriparatide,H05AA02,-,pas de données,pas de données,pas de données,pas de données
+terlipressin,H01BA04,-,pas de données,pas de données,pas de données,pas de données
+testosterone,G03BA03,-,3,3,3,pas de données
+tetracycline,J01AA07,-,3,0,3,la donnée n'a pas pu être extraite
+theophylline,R03DA04,-,pas de données, 0 ,pas de données,pas de données
+thiamazole,H03BB02,-,pas de données,pas de données,pas de données,pas de données
+thiethylperazine,R06AD03,-, 3 , 0 , 3 ,0
+thiopental,N01AF03,-,pas de données,pas de données,pas de données,pas de données
+tibolone,G03CX01,-,pas de données,0,pas de données,pas de données
+ticagrelor,B01AC24,-,0,0,1,0
+ticlopidine,B01AC05,-, 3* , 0 , 3 ,pas de données
+timolol,C07AA06,-,pas de données,0,pas de données,pas de données
+tinidazole,P01AB02,-,pas de données,pas de données,pas de données,pas de données
+tinzaparin,B01AB10,SummaryThe use of carbohydrates is not considered to have any environmental impact. This summary information comes from Fass.,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+tioguanine,L01BB03,-, 3 , 0 , 3 ,pas de données
+tiotropiumbromide,R03BB04,-,3,0,1,pas de données
+tipranavir,J05AE09,-, 3 , 0 , 2 ,0
+tirofiban,B01AC17,-, 3 , 0 , 0 ,0
+tobramycin,J01GB01,-, 3 , 0 , 3 ,0
+tocilizumab,L04AC07,-,pas de données,pas de données,pas de données,pas de données
+tofacitinib,L04AA29,-, 3 , 0 , 2* ,pas de données
+tolcapone,N04BX01,-,pas de données,pas de données,pas de données,pas de données
+tolterodine,G04BD07,-,pas de données,pas de données,pas de données,pas de données
+topiramate,N03AX11,-,pas de données,0,1, No obvious environmental risk from a Swedish perspective
+topotecan,L01XX17,-, 0 , 0 , 1* ,pas de données
+torasemide,C03CA04,-, 3 , 0 , 1 ,0
+trabectedin,L01CX01,-,pas de données,pas de données,pas de données,pas de données
+tramadol,N02AX02,-,pas de données,pas de données,pas de données,pas de données
+trandolapril,C09AA10,-, 3 , 0 , 3* ,0
+tranexamicacid,B02AA02,"SummaryThe use of amino acids, proteins and peptides is not considered to have any environmental impact. This summary information comes from Fass.",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+trastuzumab,L01XC03,-,pas de données,pas de données,pas de données,pas de données
+travoprost,S01EE04,"SummaryThis summary information is from the SPC (Summary of Product Characteristics) for Izba (travoprost) section 5.3 (downloaded 2020-09-08). ""Travoprost is considered a persistent, bioaccumulative and toxic (PBT) substance. Hence, despite the very small amounts of travoprost used by patients in eye drops, a risk to the environment cannot be excluded.""",voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires,voir colonne notes supplémentaires
+tretinoin,D10AD01,-,pas de données,pas de données,pas de données,pas de données
+triazolam,N05CD05,-,pas de données,pas de données,pas de données,pas de données
+trihexyphenidyl,N04AA01,-,pas de données,pas de données,pas de données,pas de données
+trimethoprim,J01EA01,-,3,0,1,la donnée n'a pas pu être extraite
+trimipramine,N06AA06,-, 3 , 0 , 3 ,pas de données
+triptorelin,L02AE04,-,pas de données,pas de données,pas de données,pas de données
+tropicamide,S01FA06,-,pas de données, 0 ,pas de données,pas de données
+tropisetron,A04AA03,-, 3 , 3* , 3 ,pas de données
+ulipristal,G03AD02,-,pas de données,3,pas de données,pas de données
+urofollitropin,G03GA04,-,pas de données,pas de données,pas de données,pas de données
+ursodeoxycholicacid,A05AA02,-,pas de données,pas de données,pas de données,pas de données
+ustekinumab,L04AC05,-,pas de données,pas de données,pas de données,pas de données
+valaciclovir,J05AB11,-,3,0,0,0
+valganciclovir,J05AB14,-, 3 , 0 , 0 ,0
+valproicacid,N03AG01,-,3,0,0,0
+valsartan,C09CA03,-,3,3,0,la donnée n'a pas pu être extraite
+vardenafil,G04BE09,-, 3 , 0 , 3* ,pas de données
+varenicline,N07BA03,-,3,0,3,0
+vecuronium,M03AC03,-,pas de données, 0 ,pas de données,pas de données
+vedolizumab,L04AA33,-,pas de données,pas de données,pas de données,pas de données
+venlafaxine,N06AX16,-,3,0,2,la donnée n'a pas pu être extraite
+verapamil,C08DA01,-,pas de données,0,1,pas de données
+vernakalant,C01BG11,-,pas de données, 0 ,pas de données,pas de données
+verteporfin,S01LA01,-,pas de données,pas de données,pas de données,pas de données
+vigabatrin,N03AG04,-, 3* , 0 , 1* ,pas de données
+vildagliptin,A10BH02,-, 3 , 0 , 1* ,0
+vinblastine,L01CA01,-,pas de données,pas de données,pas de données,pas de données
+vincristine,L01CA02,-,pas de données,pas de données,pas de données,pas de données
+vindesine,L01CA03,-,pas de données,pas de données,pas de données,pas de données
+vinorelbine,L01CA04,-,pas de données,pas de données,pas de données,pas de données
+voriconazole,J02AC03,-,pas de données,pas de données,pas de données,pas de données
+vortioxetine,N06AX26,-, 3 , 3 , 3 ,pas de données
+warfarin,B01AA03,-,3,0,1,0
+xylometazoline,R01AA07,-, 3 , 3 , 1* ,pas de données
+zaleplon,N05CF03,-,pas de données,pas de données,pas de données,pas de données
+zidovudine,J05AF01,-, 3 , 0 , 1* ,pas de données
+zoledronicacid,M05BA08,-,pas de données,pas de données,pas de données,pas de données
+zolmitriptan,N02CC03,-,3,0,1,0
+zolpidem,N05CF02,-,3,0,1,1
+zonisamide,N03AX15,-,pas de données, Log P values strongly contradict any significant bioconcentration in biota,0, No obvious environmental risk from a Swedish perspective
+zopiclone,N05CF01,-,pas de données,0,pas de données,la donnée n'a pas pu être extraite
+zuclopenthixol,N05AF05,-,pas de données, 3 ,pas de données,pas de données
