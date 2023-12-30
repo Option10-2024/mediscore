@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médiscore - Barre de Recherche</title>
+    <style>
+        #cadre {
+            background-color: #959595; 
+            padding: 10px; 
+            border-radius: 5px; 
+        }
+
+        th {
+            font-size: 20px;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0 10px; 
+        }
+
+        tr:not(:last-child) td {
+            border-bottom: 1px solid #000000; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Recherche Médiscore</h1>
+    <h3> <i>Cocher pour médicament sinon molécule</i></h3>
+    <p>/!\ Mettre majuscule pour les molécules /!\</p>
+    <form method="post">
+        <table>
+            <tr>
+                <td>
+                    {% if include_additional_condition %}
+                        <input type="text" name="terme_de_recherche" placeholder="Nom">
+                    {% else %}
+                        <input type="text" name="terme_de_recherche" placeholder="Nom">
+                    {% endif %}
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="include_additional_condition" {% if include_additional_condition %}checked{% endif %}> Recherche par médicament
+                    </label>
+                </td>
+                <td>
+                    <input type="submit" value="Rechercher">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    {% if resultats %}
+        {% if include_additional_condition %}
+            <br>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <th style="width: 15%; text-align: left;">Nom complet</th>
+                    <th style="width: 5%;">Molécule</th>
+                    <th style="width: 2%;">DDD</th>
+                    <th style="width: 2%;">DDU</th>
+                    <th style="width: 2%;">Moins cher</th>
+                    <th style="width: 2%;">Narcotique</th>
+                    <th style="width: 2%;">Persistence</th>
+                    <th style="width: 2%;">Bioaccumulation</th>
+                    <th style="width: 2%;">Toxicity</th>
+                    <th style="width: 2%;">Bilan carbone</th>
+                </tr>
+                {% for resultat in resultats %}
+                    <tr>
+                        <td style="text-align: left;">{{ resultat[0] }}</td>
+                        <td>{{ resultat[1] }}</td>
+                        <td>{{ resultat[2] }}</td>
+                        <td>{{ resultat[3] }}</td>
+                        <td>{{ resultat[4] }}</td>
+                        <td>{{ resultat[5] }}</td>
+                        <td>{{ resultat[6] }}</td>
+                        <td>{{ resultat[7] }}</td>
+                        <td>{{ resultat[8] }}</td>
+                        <td>{{ resultat[9] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+        <br>
+        <div id="cadre">
+            <h2>Ecotoxicité</h2>
+            <ul>
+                <li>
+                    {% if resultats and resultats[0][5] %}
+                        <span style="color: {% if resultats[0][5].strip() =='3' %}red{% elif resultats[0][5].strip() =='3*' %}red{% elif resultats[0][5].strip() =='pas de données' %}black{% else %}green{% endif %};">Persistence: {{ resultats[0][5] }}{% if resultats[0][5].strip() == "3*" %} - Le score inclut une compensation pour les données manquantes{% elif resultats[0][5].strip() == "0*" %} - Le score inclut une compensation pour les données manquantes{%endif%} </span>
+                    {% else %}
+                        <span style="color: black;">Persistence: (Aucune valeur disponible)</span>
+                    {% endif %}
+                </li>
+                <li>
+                    {% if resultats and resultats[0][6] %}
+                        <span style="color: {% if resultats[0][6].strip() =='3' %}red{% elif resultats[0][6].strip() =='3*' %}red{% elif resultats[0][6].strip() =='pas de données' %}black{% else %}green{% endif %};">Bioaccumulation: {{ resultats[0][6] }}{% if resultats[0][6].strip() == "3*" %} - Le score inclut une compensation pour les données manquantes{% elif resultats[0][6].strip() == "0*" %} - Le score inclut une compensation pour les données manquantes{%endif%} </span>
+                    {% else %}
+                        <span style="color: black;">Bioaccumulation: (Aucune valeur disponible)</span>
+                    {% endif %}
+                </li>
+                <li>
+                    {% if resultats and resultats[0][7] %}
+                        <span style="color: {% if resultats[0][7].strip() =='3' %}red{% elif resultats[0][7].strip() =='3*' %}red{% elif resultats[0][7].strip() =='2' %}orange{% elif resultats[0][7].strip() =='2*' %}orange{% elif resultats[0][7].strip() =='1' %}yellow{% elif resultats[0][7].strip() =='1*' %}yellow{% elif resultats[0][7].strip() =='pas de données' %}black{% else %}green{% endif %};">Toxicity: {{ resultats[0][7] }}{% if resultats[0][7].strip() == "3*" %} - Le score inclut une compensation pour les données manquantes{% elif resultats[0][7].strip() == "0*" %} - Le score inclut une compensation pour les données manquantes{% elif resultats[0][7].strip() == "2*" %} - Le score inclut une compensation pour les données manquantes{% elif resultats[0][7].strip() == "1*" %} - Le score inclut une compensation pour les données manquantes{%endif%} </span>
+                    {% else %}
+                        <span style="color: black;">Toxicity: (Aucune valeur disponible)</span>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+        
+                
+            </ul>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <th style="width: 15%; text-align: left;">Nom complet</th>
+                    <th style="width: 2%;">DDD</th>
+                    <th style="width: 2%;">DDU</th>
+                    <th style="width: 5%;">Moins cher</th>
+                    <th style="width: 5%;">Narcotique</th>
+                    <th style="width: 5%;">Bilan carbone</th>
+                </tr>
+                {% for resultat in resultats %}
+                    <tr>
+                        <td style="text-align: left;">{{ resultat[0] }}</td>
+                        <td>{{ resultat[1] }}</td>
+                        <td>{{ resultat[2] }}</td>
+                        <td>{{ resultat[3] }}</td>
+                        <td>{{ resultat[4] }}</td>
+                        <td>{{ resultat[8] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
+
