@@ -1,3 +1,5 @@
+#%%
+
 import pandas as pd
 import numpy as np
 import warnings
@@ -6,8 +8,8 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 # Import dataframe
-df = pd.read_csv('webscraping\outputs\janus_webscraping.csv', sep = ",")
-
+#df_1 = pd.read_csv('webscraping\outputs\janus_webscraping.csv', sep = ",")
+df = pd.read_csv('janus_webscraping.csv', sep = ",")
 
 # Add empty columns to the DF that'll be filled later
 Persistence = np.zeros(len(df))
@@ -32,27 +34,32 @@ def splitter(data, num_row, num_column, word_split, store) :
 
 # Iteration over the wall DF
 for i, row in df.iterrows() :
-    x = splitter(df,i,2,"Persistence",True)          #FIRST CASE --> text description
+    x = splitter(df,i,3,"Persistence",True)          #FIRST CASE --> text description
     if x > 1 :                                       #x and y refers to len() --> if worked or not
-        splitter(df,i,3,"Bioaccumulation",True)      #each function takes for input the "rest" of
-        splitter(df,i,4,"Toxicity",True)             #the previous one to isolate the wanted part
-        splitter(df,i,5,"Risk",True)
+        splitter(df,i,4,"Bioaccumulation",True)      #each function takes for input the "rest" of
+        splitter(df,i,5,"Toxicity",True)             #the previous one to isolate the wanted part
+        splitter(df,i,6,"Risk",True)
     else :
-        y = splitter(df,i,2,"SummaryHazard",False)   #SECOND CASE --> numbers
+        y = splitter(df,i,3,"SummaryHazard",False)   #SECOND CASE --> numbers
         if y > 1 :
-            splitter(df,i,2,"P",True)
-            splitter(df,i,3,"B",True)
-            splitter(df,i,4,"T",True)
-            splitter(df,i,5,"Risk",True)
+            splitter(df,i,3,"P",True)
+            splitter(df,i,4,"B",True)
+            splitter(df,i,5,"T",True)
+            splitter(df,i,6,"Risk",True)
         else :                                       #UNKNOWN CASE
             Acc = Acc + 1                            #counts the number
-            df.iloc[i,3] = "voir colonne notes supplémentaires"             #P,B,T and R columns refers to the summary
-            df.iloc[i,4] = "voir colonne notes supplémentaires" 
+            df.iloc[i,4] = "voir colonne notes supplémentaires"             #P,B,T and R columns refers to the summary
             df.iloc[i,5] = "voir colonne notes supplémentaires" 
             df.iloc[i,6] = "voir colonne notes supplémentaires" 
+            df.iloc[i,7] = "voir colonne notes supplémentaires" 
 
 
 print("Parsing done, " + str(Acc) + " not correctly parsed")
 #most of those rows don't have any PBT values due to the fact that the molec is a protein, vitamin,...
 
-df.to_csv('parsing\janus_parsed.csv',index=False)
+# Rewrite the column order to facilitate next step
+df = df[['drug_name','atc','summary','Persistence','Bioaccumulation','Toxicity','Risk','uncertainty_atc_match']]
+
+# Export
+df.to_csv('janus_parsed.csv',index=False)
+# %%
